@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Name - Portfolio</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">  <link href="css/style.css" rel="stylesheet">         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
+    <style>
+      /* Basic Styling - Customize this extensively */
+      body { font-family: 'Open Sans', sans-serif; }
+      section { padding: 40px 0; }
+      .container { max-width: 960px; } /* Adjust as needed */
+      .project-image { max-width: 100%; height: auto; }
+      /* ... more styles ... */
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Your Name</h1>
+            <h2>Your Title/Specialization</h2>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="your-photo.jpg" alt="Your Photo" style="float:left; margin-right:20px; max-width:200px">  <p>Your About Me Text from Resume.  Include your skills, experience summary, and anything else relevant.  Keep it concise and engaging.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="row">  <div class="col-md-4">  <img src="project1.jpg" alt="Project 1" class="project-image">
+                    <h3>Project Title 1</h3>
+                    <p>Short project description from resume.</p>
+                    <a href="project1-details.html">Learn More</a> </div>
+                <div class="col-md-4">
+                    <img src="project2.jpg" alt="Project 2" class="project-image">
+                    <h3>Project Title 2</h3>
+                    <p>Short project description from resume.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="project3.jpg" alt="Project 3" class="project-image">
+                    <h3>Project Title 3</h3>
+                    <p>Short project description from resume.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: Your Phone Number</p>
+            <p>LinkedIn: <a href="your-linkedin-profile">Your LinkedIn Profile</a></p>
+            <p>GitHub: <a href="your-github-profile">Your GitHub Profile</a></p>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-2.1.1.js"></script>  <script src="js/bootstrap.min.js"></script> <script>
+      // Smooth scrolling for navigation links
+      $('nav a').click(function(event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        $('html, body').animate({
+          scrollTop: $(target).offset().top
+        }, 800); // Adjust scroll speed as needed
+      });
+    </script>
+</body>
+</html>
